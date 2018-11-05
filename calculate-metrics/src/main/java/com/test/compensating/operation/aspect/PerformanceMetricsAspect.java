@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
         //@Around("execution(* com.test.manager..*(..))")
         //@Around("execution(* com.test.manager.*.*(..))")
         //@Around("execution(* com.test.manager.performOperation(..))")
-        @Around("execution(* com.test.manager.performOperation())")
+        @Around("execution(* com.test.manager..performOperation())")
         //@Pointcut("execution(* com.test.manager.performOperation(..))")
         // @Pointcut("within(com.test.manager.performOperation.*)")
         public Object getVaultManagerPerformanceMetrics(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {

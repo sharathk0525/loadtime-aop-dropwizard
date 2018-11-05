@@ -1,0 +1,9 @@
+<aspectj>
+  <aspects>
+    <aspect name="com.test.compensating.operation.aspect.PerformanceMetricsAspect"/>
+  </aspects>
+
+  <weaver options="-verbose -showWeaveInfo">
+    <include within="com.test..*"/>
+  </weaver>
+</aspectj>
