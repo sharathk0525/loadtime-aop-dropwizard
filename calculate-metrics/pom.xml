@@ -12,7 +12,26 @@
         <slf4j-api.version>1.7.25</slf4j-api.version>
         <hibernate-core.version>4.3.5.Final</hibernate-core.version>
         <springframework.version>3.2.18.RELEASE</springframework.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.source-target.version>1.8</java.source-target.version>
     </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.3</version>
+                    <configuration>
+                        <source>${java.source-target.version}</source>
+                        <target>${java.source-target.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
 
     <dependencies>
         <dependency>
